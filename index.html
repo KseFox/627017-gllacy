@@ -11,16 +11,59 @@
          </a>
          <nav class="main-navigation">
             <ul class="site-navigation">
-               <li><a href="catalog.html">Каталог</a></li>
-               <li><a href="price.html">Доставка и оплата</a></li>
-               <li><a href="info.html">О компании</a></li>
+               <li>
+                  <a href="catalog.html">Каталог</a>
+                  <ul class="catalog">
+                     <li>
+                        <a href="catalog.html">Новинки</a>
+                     </li>
+                     <li>
+                        <a href="catalog.html">Сливочное</a>
+                     </li>
+                     <li>
+                        <a href="catalog.html">Щербеты</a>
+                     </li>
+                     <li>
+                        <a href="catalog.html">Фруктовый лёд</a>
+                     </li>
+                     <li>
+                        <a href="catalog.html">Мелорин</a>
+                     </li>
+                  </ul>
+               <li>
+                  <a href="price.html">Доставка и оплата</a>
+               </li>
+               <li>
+                  <a href="info.html">О компании</a>
+               </li>
             </ul>
          </nav>
          <ul class="user-navigation">
-            <li class="search">Поиск
-            <li>
-            <li class="login-link">Вход</li>
-            <li class="shop">Корзина 
+            <li class="search">
+               <label>
+               <input type="text" placeholder="Что ищем?">
+               </label>
+            </li>
+            <li class="login-link">
+               <a class="login-link" href="login.html">Вход</a>
+               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p>
+                     <label class="visually-hidden" for="user-login">Электронная почта</label>
+                     <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+                  </p>
+                  <p>
+                     <label class="visually-hidden" for="user-password">Пароль</label>
+                     <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+                  </p>
+                  <p class="login-password-info">
+                     <a class="restore" href="#">Забыли пароль?</a>
+                     <a class="register" href="#">Новая регистрация</a>
+                  </p>
+                  <button class="button" type="submit">Войти</button>
+               </form>
+            </li>
+            <li class="shop">
+               <label class="visually-hidden" for="shop">Корзина</label>
             </li>
          </ul>
          <ul class="worktime">
@@ -30,22 +73,16 @@
       </header>
       <main class="container">
          <section class="slider">
-            <div>
-               <h3>Слайд</h3>
-               <a href="slider1.html">Крем-брюле</a>
-               <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+            <div class="slide-1">
+               <h3>Крем-брюле и пломбир с малиновым джемом</h3>
                <a class="button" href="catalog.html"> "Давайте оба!"</a>
             </div>
-            <div>
-               <h3>Слайд</h3>
-               <a href="slider2.html">Малинка</a>
-               <h2>Шоколадный пломбир и лимонный сорбет</h2>
+            <div class="slide-2">
+               <h3>Шоколадный пломбир и лимонный сорбет</h3>
                <a class="button" href="catalog.html"> "Давайте оба!"</a>
             </div>
-            <div>
-               <h3>Слайд</h3>
-               <a href="slider3.html">Шоколадка</a>
-               <h2>Пломбир с помадкой и клубничный щербет</h2>
+            <div class="slide-3">
+               <h3>Пломбир с помадкой и клубничный щербет</h3>
                <a class="button" href="catalog.html"> "Давайте оба!"</a>
             </div>
          </section>
@@ -65,25 +102,25 @@
             <h2 class="visually-hidden">Каталог мороженого</h2>
             <ul class="catalog-list">
                <li class="catalog-item">
-                  <img src=" <img/image/orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <img src="img/image/orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                   <span class="catalog-item-price">310₽/кг</span>
                   <span class="catalog-category">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
                   <a class="button" href="#">Быстрый просмотр</a>
                </li>
                <li class="catalog-item">
-                  <img src=" <img/image/coffe.png" alt="Сливочно-кофейное с кусочками шоколада">
+                  <img src="img/image/coffee.png" alt="Сливочно-кофейное с кусочками шоколада">
                   <span class="catalog-item-price">380₽/кг</span>
                   <span class="catalog-category">Сливочно-кофейное с кусочками шоколада</span>
                   <a class="button" href="#">Быстрый просмотр</a>
                </li>
                <li class="catalog-item">
-                  <img src=" <img/image/strawberry.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                  <img src="img/image/strawberry.png" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                   <span class="catalog-item-price">355₽/кг</span>
                   <span class="catalog-category">Сливочно-клубничное с присыпкой из белого шоколада</span>
                   <a class="button" href="#">Быстрый просмотр</a>
                </li>
                <li class="catalog-item">
-                  <img src=" <img/image/caramel.png" alt="Сливочное крем-брюле с карамельной подливкой">
+                  <img src="img/image/caramel.png" alt="Сливочное крем-брюле с карамельной подливкой">
                   <span class="catalog-item-price">415₽/кг</span>
                   <span class="catalog-category">Сливочное крем-брюле с карамельной подливкой</span>
                   <a class="button" href="#">Быстрый просмотр</a>
@@ -117,7 +154,7 @@
             <a href="news.html">10 способов сервировки фруктовых щербетов к столу</a>
          </article>
          <section class="info-bulletin">
-            <p>Подпиштесь на нашу сладкую рассылку и бедете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <p>Подпишитесь на нашу сладкую рассылку и бедете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form action="https://echo.htmlacademy.ru">
                <input type="email" name="email" placeholder="Электронная почта">
                <input type="submit" name="send" value="Отправить">
@@ -130,7 +167,22 @@
             <p>Для заказов по телефону:</p>
             <p>8 812 450-25-25</p>
             <p>(с 10 до 20 ежедневно)</p>
+            <label class="visually-hidden" for="user-login">Форма обратной связи</label>
             <a class="button" href="feedback.html">Форма обратной связи </a>
+            <div class="pop-up">
+               Форма обратной связи
+            </div>
+            <div class="b-popup">
+               <div class="Мы обязательно вам ответим!">
+                  <input id="name-pop-up" type="text" placeholder="Как вас зовут?">
+                  <label for="name-pop-up">Как вас зовут?</label>
+                  <input id="email-pop-up" type="email" placeholder="Ваша почта для ответа?">
+                  <label for="email-pop-up">Ваша почта для ответа?</label>
+                  <input id="text-pop-up" type="email" placeholder="Напишите что-нибудь">
+                  <label for="text-pop-up">Напишите что-нибудь</label>
+                  <a class="button" href="feedback.html">Отправить</a>
+               </div>
+            </div>
          </section>
          <footer class="main-footer">
             <div class="social">
