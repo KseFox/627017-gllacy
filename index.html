@@ -18,7 +18,9 @@
                         <a href="catalog.html">Новинки</a>
                      </li>
                      <li>
+                    <div class="checked">
                         <a href="catalog.html">Сливочное</a>
+                    </div>
                      </li>
                      <li>
                         <a href="catalog.html">Щербеты</a>
@@ -46,7 +48,7 @@
                <a class="login-link" href="login.html">Вход</a>
                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                   <p>
-                     <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Электронная почта">
+                     <input class="login-icon-user" id="user-login" type="email" name="login" placeholder="Электронная почта">
                   </p>
                   <p>
                      <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
@@ -55,11 +57,12 @@
                      <a class="restore" href="#">Забыли пароль?</a>
                      <a class="register" href="#">Новая регистрация</a>
                   </p>
-                  <button class="button" type="submit">Войти</button>
+                  <button type="submit">Войти</button>
                </form>
             </li>
             <li class="shop">
-               <button class="basket" type="submit">Пусто</button>
+               <p>Пусто<p>
+                   <button type="submit">Отправить</button>
             </li>
          </ul>
          <ul class="worktime">
@@ -68,30 +71,32 @@
          </ul>
       </header>
       <main class="container">
-         <section class="slider">
+        <section class="slider">
+                <h2 class="visually-hidden">Слайдер с тремя видами мороженого</h2>
             <div class="slide-1">
                <h3>Крем-брюле и пломбир с малиновым джемом</h3>
-               <a class="button" href="catalog.html"> "Давайте оба!"</a>
+               <a class="button" href="catalog.html">Давайте оба!</a>
             </div>
             <div class="slide-2">
                <h3>Шоколадный пломбир и лимонный сорбет</h3>
-               <a class="button" href="catalog.html"> "Давайте оба!"</a>
+               <a class="button" href="catalog.html">Давайте оба!</a>
             </div>
             <div class="slide-3">
                <h3>Пломбир с помадкой и клубничный щербет</h3>
-               <a class="button" href="catalog.html"> "Давайте оба!"</a>
+               <a class="button" href="catalog.html">Давайте оба!</a>
             </div>
          </section>
          <section class="promo">
+                <h2 class="visually-hidden">Блок с промо акциями</h2>
             <div class="firstblock">
                <h3>Малинка даром! </h3>
                <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-               <a class="button" href="catalog.html">"Хочу варенье!"</a>
+               <a class="button" href="catalog.html">Хочу варенье!</a>
             </div>
             <section class="secondblock">
                <h3>Шоколадки даром!</h3>
                <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-               <a class="button" href="catalog.html">"Хочу шоколадки!"</a>
+               <a class="button" href="catalog.html">Хочу шоколадки!</a>
             </section>
          </section>
          <section class="catalog">
@@ -158,13 +163,14 @@
          </section>
          <section class="contacts">
             <h5 class="visually-hidden">Контакты</h5>
+            <div class="all-contacts"></div>
             <p>Адрес главного офиса и офлайн-магазина:</p>
             <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
             <p>Для заказов по телефону:</p>
             <p>8 812 450-25-25</p>
             <p>(с 10 до 20 ежедневно)</p>
-            <label class="visually-hidden" for="user-login">Форма обратной связи</label>
-            <a class="button" href="feedback.html">Форма обратной связи </a>
+            <a class="button" href="feedback.html">Форма обратной связи</a>
+         </div>
             <div class="pop-up">
                Форма обратной связи
             </div>
@@ -175,7 +181,6 @@
                   <input id="text-pop-up" type="email" placeholder="Напишите что-нибудь">
                   <a class="button" href="feedback.html">Отправить</a>
                </div>
-            </div>
          </section>
          <footer class="main-footer">
             <div class="social">

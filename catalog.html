@@ -51,15 +51,13 @@
                      <a class="restore" href="#">Забыли пароль?</a>
                      <a class="register" href="#">Новая регистрация</a>
                   </p>
-                  <button class="button" type="submit">Войти</button>
+                  <button type="submit">Войти</button>
                </form>
             </li>
-            <li class="shop">
+            <li class="shopcart">
                2 товара
-               <h2 class="visually-hidden">2 товара</h2>
-            </li>
-            <li>
-               <table>
+               <h2 class="visually-hidden">Корзина пользователя, в которой 2 товара</h2>
+                <table>
                   <tr>
                      <td><img src="img/image/orange.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></td>
                      <td><span class="catalog-item-price-about">1,5 кг x 200 руб.</span></td>
@@ -73,7 +71,7 @@
                      <td><span class="catalog-item-price-buy">450 руб.</span></td>
                   </tr>
                </table>
-               <a class="button" href="#">Оформить заказ</a>
+               <button type="submit">Оформить заказ</button>
             </li>
             <li class="worktime">С 10 до 20, ежедневно</li>
             <li class="worktime">8 812 450-25-25</li>
@@ -89,40 +87,47 @@
          <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <p> Сортировка: </p>
-            <select>
+            <select class="price-select">
                <option value="по популярности">
                <option value="сначала недорогие">
                <option value="сначала дорогие">
                <option value="по жирности">
             </select>
-            <p>Цена: 100 руб. - 500 руб. </p>
+            <section class="price-radio">
+                <p>Цена: 100 руб. - 500 руб.</p>
+                <input name="price-range" type="range" min="100" max="500" step="1">
+        </section>
+        <section class="fatness-select">
             <p>Жирность</p>
             <fieldset>
                <legend>Жирность</legend>
-               <label for="fat-1">0%</label>
-               <input type="checkbox" name="option1" value="a1" id="fat-1">0%
-               <label for="fat-2">до 10%</label>
-               <input type="checkbox" name="option2" value="a2" checked id="fat-2">до 10%
-               <label for="fat-3">до 30%</label>
-               <input type="checkbox" name="option3" value="a3" id="fat-3">до 30%
-               <label for="fat-4">выше 30%</label>
-               <input type="checkbox" name="option4" value="a4" id="fat-4">выше 30% 
+               <label for="fatness-1">0%</label>
+               <input type="radio" name="select" value="0%" id="fatness-1">
+               <label for="fatness-2">до 10%</label>
+               <input type="radio" name="select" value="до 10%" checked id="fatness-2">
+               <label for="fatness-3">до 30%</label>
+               <input type="radio" name="select" value="до 30%" id="fatness-3">
+               <label for="fatness-4">выше 30%</label>
+               <input type="radio" name="select" value="выше 30%" id="fatness-4"> 
             </fieldset>
+        </section>
+        <section class="fillers-select">
             <p> Наполнители</p>
             <fieldset>
                <legend>Наполнители</legend>
-               <label for="consist-1">шоколадные</label>
-               <input type="checkbox" name="option1" value="a1" checked id="consist-1">шоколадные
-               <label for="consist-2">сахарные присыпки</label>
-               <input type="checkbox" name="option2" value="a2" checked id="consist-2">сахарные присыпки
-               <label for="consist-3">фрукты</label>
-               <input type="checkbox" name="option3" value="a3" id="consist-3">фрукты
-               <label for="consist-4">сиропы</label>
-               <input type="checkbox" name="option4" value="a4" id="consist-4">сиропы
-               <label for="consist-5">джемы</label>
-               <input type="checkbox" name="option4" value="a4" id="consist-5">джемы  
-               <a class="button" href="#">Применить</a> 
+               <label for="fillers-1">шоколадные</label>
+               <input type="checkbox" name="шоколадные" value="a1" checked id="fillers-1">
+               <label for="fillers-2">сахарные присыпки</label>
+               <input type="checkbox" name="сахарные присыпки" value="a2" checked id="fillers-2">
+               <label for="fillers-3">фрукты</label>
+               <input type="checkbox" name="фрукты" value="a3" id="fillers-3">
+               <label for="fillers-4">сиропы</label>
+               <input type="checkbox" name="сиропы" value="a4" id="fillers-4">
+               <label for="fillers-5">джемы</label>
+               <input type="checkbox" name="джемы" value="a4" id="fillers-5">  
             </fieldset>
+        </section>
+            <button type="submit">Применить</button> 
          </section>
          <section class="catalog">
             <h2 class="visually-hidden">Каталог мороженого</h2>
