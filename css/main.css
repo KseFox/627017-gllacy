@@ -218,6 +218,14 @@ visibility: hidden;
 
 }
 
+.catalog .button {
+background-color:  #d07058;
+color:  #ffffff;
+font-size: 16px;
+font-weight: 700;
+text-align: left;
+}
+
 .catalog-list {
 
 }
@@ -351,3 +359,88 @@ font-weight: 400;
 line-height: 18px;
 text-align: left;
 }
+
+catalog-item-price-about
+catalog-category-buy
+catalog-item-price-buy
+
+.page-title {
+color:  #ffffff;
+font-size: 35px;
+font-weight: 700;
+line-height: 41px;
+text-align: left;
+}
+
+.breadcrumb {
+font-size: 14px;
+font-weight: 400;
+line-height: 16px;
+text-align: left;
+}
+
+.active,
+.price-select {
+font-family: Roboto;
+color:  #ffffff;
+font-size: 16px;
+font-weight: 700;
+line-height: 18px;
+text-align: left;
+}
+filters
+
+.filters-categoty,
+.range,
+.fillers-select {
+color:  #ffffff;
+font-size: 14px;
+font-weight: 500;
+line-height: 16px;
+text-align: left;
+}
+
+.filter-select .input {
+color:  #ffffff;
+font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;
+}
+.filter-sort {
+
+}
+.price-select {
+font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;  
+}
+
+filter-range
+range-all
+range-select
+
+.fillers-select .button {
+color:  #ffffff;
+font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+text-align: left;
+background-color:  rgba(255, 255, 255, 0.19);
+}
+
+.pagination-list {
+color:  #323232;
+font-size: 16px;
+font-weight: 500;
+line-height: 18px;
+text-align: right;
+}
+prev
+
+.pagination-item-pagination-item-current {
+background-color:  #ffffff;
+}
+pagination-item
+next
