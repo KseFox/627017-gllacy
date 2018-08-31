@@ -7,8 +7,9 @@
       <link href="css/main.css" rel="stylesheet">
       <link href="css/normalize.css" rel="stylesheet">
    </head>
-   <body>
+   <body class="inner-page">
         <header class="main-header">
+                <div class="style">
             <a class="main-header-logo">
                 <img src="img/icon/logo.svg" alt="Glassy Shop">
             </a>
@@ -87,14 +88,16 @@
                 <p>С 10 до 20, ежедневно</p>
                 <p>8 812 450-25-25 </p>
             </div>
+            </div>
         </header>
         <main class="container">
-            <h1 class="page-title">Cливочное мороженое</h1>
+                <div class="style">
                 <ul class="breadcrumb">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">Каталог</a></li>
                     <li class="active">Сливочное</li>
                 </ul>
+                <h1 class="page-title">Cливочное мороженое</h1>
             <h2 class="visually-hidden">Фильтр товаров</h2>
                 <form class="filters" action="https://echo.htmlacademy.ru" method="get">
                     <div class="filters-categoty">
@@ -120,17 +123,19 @@
                   <div class="range-select"></div>
                </div>
             </div>
-            <fieldset>
-                <legend>Жирность</legend>
-                    <label for="fatness-0%">0%</label>
-                        <input type="radio" name="fatness" value="0%" id="fatness-0%">
-                    <label for="fatness-less-10%">до 10%</label>
-                        <input type="radio" name="fatness" value="до 10%" checked id="fatness-less-10%">
-                    <label for="fatness-less-10%">до 30%</label>
-                        <input type="radio" name="fatness" value="до 30%" id="fatness-less-30%">
-                    <label for="fatness-above-30%">выше 30%</label>
-                        <input type="radio" name="fatness" value="выше 30%" id="fatness-above-30%"> 
-            </fieldset>
+            <section class="fatness-select">
+                <fieldset>
+                    <legend>Жирность</legend>
+                        <label for="fatness-0%">0%</label>
+                            <input type="radio" name="fatness" value="0%" id="fatness-0%">
+                        <label for="fatness-less-10%">до 10%</label>
+                            <input type="radio" name="fatness" value="до 10%" checked id="fatness-less-10%">
+                        <label for="fatness-less-10%">до 30%</label>
+                            <input type="radio" name="fatness" value="до 30%" id="fatness-less-30%">
+                        <label for="fatness-above-30%">выше 30%</label>
+                            <input type="radio" name="fatness" value="выше 30%" id="fatness-above-30%"> 
+                </fieldset>
+            </section>
             <section class="fillers-select">
                 <fieldset>
                     <legend>Наполнители</legend>
@@ -146,7 +151,7 @@
                             <input type="checkbox" name="jam" value="a4" id="jam">  
                 </fieldset>
             </section>
-            <button type="submit">Применить</button>
+            <button class="button-filters" type="submit">Применить</button>
             <section class="catalog">
                 <h2 class="visually-hidden">Каталог мороженого</h2>
                     <ul class="catalog-list">
@@ -238,14 +243,16 @@
                     <a class="pagination-item" href="#">3</a>
                 </li>
                 <li>
-                    <a class="pagination-item" a href="#">4</a>
+                    <a class="pagination-item" href="#">4</a>
                 </li>
                 <li>
                     <a class="next" href="#">Вперёд</a>
                 </li>
             </ul>
+            </div>
         </main>
         <footer class="main-footer">
+                <div class="style">
             <div class="social">
                 <a class="social-button" href="#">Твиттер</a>
                 <a class="social-button" href="#">Инстаграм</a>
@@ -262,6 +269,7 @@
                 <b>Сделано в </b> 
                 <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
             </p>
+        </div>
         </footer>
     </body>
 </html>
