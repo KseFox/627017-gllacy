@@ -8,10 +8,9 @@
     </head>
     <body class="inner-page">
         <header class="main-header">
-            <div class="style">
+            <div class="header-container"style="display" flex;>
                 <a class="main-header-logo">
-                    <img class="logo" src="img/icon/logo.svg" alt="Glassy Shop">
-                </a>
+                    <img class="logo" src="img/icon/logo.svg" width="153" height="63" alt="Glassy Shop">                </a>
                 <nav class="main-navigation">
                     <ul class="site-navigation">
                         <li>
@@ -43,13 +42,14 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
             <ul class="user-navigation">
                 <li class="search">
                     <input type="text" placeholder="Что ищем?">
                     <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
                     </form>
                 </li>
-                <li class="login-link">
+                <li class="login-block">
                     <a class="login-link" href="login.html">Вход</a>
                         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
                             <input class="login-icon-user" id="user-login" type="email" name="login" placeholder="Электронная почта">
@@ -62,7 +62,7 @@
                         </form>
                 </li>
                 <li class="shopcard">
-                    <p>Пусто<p>
+                    <a class="shop" href="#">Пусто</a>
                 </li>
             </ul>
         <div class="worktime-table">
@@ -71,7 +71,7 @@
         </div>
         </div>
         </header>
-        <main class="container">
+        <main>
             <div class="style">
             <section class="slider">
                 <h2 class="visually-hidden">Наши новые самые вкусные виды мороженого</h2>
@@ -188,6 +188,7 @@
                             <button class="feedback-close"></button>
                     </div>
             </section>
+        </main>
             <footer class="main-footer">
                 <div class="style">
                 <div class="social">
@@ -209,6 +210,5 @@
                 </div>
             </footer>
             </div>
-        </main>
-    </body>
+        </body>
 </html>
