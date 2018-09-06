@@ -185,6 +185,7 @@
     font-size: 60px; 
     line-height: 60px; 
     text-align: center; 
+    background-image: url(..img/image/icebig1.png) no-repeat; 
     } 
     
     .slide-2,
@@ -714,3 +715,14 @@
     .pagination-item-pagination-item-current { 
     background-color: #ffffff; 
     } 
+
+    .container .container {
+    flex-wrap: wrap;
+    display: flex;
+    }
+    .main-footer .container {
+    display: flex;
+    min-width: 900px;
+    max-width: 1200px;
+    margin: 14px auto 0 auto;
+    }
