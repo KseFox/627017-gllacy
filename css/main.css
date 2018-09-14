@@ -170,7 +170,7 @@
     line-height: 16px;
     top: 54px;
     text-align: right;
-    position: relative;
+    position: absolute;
     }
         
     .worktime-table p:first-child { 
@@ -439,6 +439,7 @@
     
     .blog {
     background: url("../img/image/backblog.png") 50% 50%; 
+    background-size: 1140px;
     width: 560px;
     color: #323232; 
     display: flex; 
@@ -469,7 +470,6 @@
     }
     
     .blog .p { 
-    font-family: Roboto; 
     color: #323232; 
     font-size: 16px; 
     font-weight: 500; 
